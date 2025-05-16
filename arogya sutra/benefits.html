@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Benefits - Arogya Sutra</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Open+Sans&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      color: #333;
+      position: relative;
+      z-index: 0;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('bgbenefits.webp') center/cover no-repeat;
+      filter: blur(8px);
+      z-index: -1;
+      opacity: 0.6;
+    }
+
+    header {
+      background-color: #2e7d32cc;
+      color: white;
+      padding: 20px 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-family: 'Playfair Display', serif;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a.active {
+      text-decoration: underline;
+    }
+
+    .benefits-hero {
+      text-align: center;
+      padding: 50px 20px 30px;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .benefits-hero h2 {
+      font-size: 2.4rem;
+      color: #2e7d32;
+      margin-bottom: 20px;
+    }
+
+    .benefits-hero p {
+      font-size: 1.3rem;
+      color: #222;
+      max-width: 700px;
+      margin: 0 auto;
+      font-weight: 600;
+    }
+
+    .detailed-benefits {
+      max-width: 1100px;
+      margin: auto;
+      padding: 50px 20px 60px;
+    }
+
+    .benefit-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 60px;
+      gap: 40px;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 40px;
+    }
+
+    .benefit-section:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .benefit-section img {
+      width: 100%;
+      max-width: 320px;
+      height: auto;
+      border-radius: 12px;
+      object-fit: cover;
+      aspect-ratio: 4 / 3;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .benefit-section .text {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .benefit-section h3 {
+      font-size: 1.9rem;
+      margin-bottom: 15px;
+      color: #1b5e20;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .benefit-section p {
+    font-size: 1.6rem;
+    color: #333;
+    line-height: 1.5;
+    font-family: math;
+    font-weight: 600;
+    }
+
+    .testimonials {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .testimonials h2 {
+      font-size: 2.2rem;
+      color: #33691e;
+      margin-bottom: 30px;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .testimonial {
+      background: #ffffffcc;
+      padding: 30px;
+      border-left: 5px solid #81c784;
+      border-radius: 12px;
+      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .testimonial p {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    .testimonial span {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #388e3c;
+    }
+
+    footer {
+      background-color: #2e7d32cc;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">Arogya Sutra</h1>
+      <nav>
+        <ul>
+          <li><a href="main.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="benefits-hero">
+    <h2>Why Choose Arogya Sutra?</h2>
+    <p>Discover the natural goodness behind our powders and how they support your wellness journey.</p>
+  </section>
+
+  <section class="detailed-benefits">
+    <div class="benefit-section">
+      <img src="fresh_img.jpg" alt="New Benefit Visual">
+      <div class="text">
+        <h3>🌾 Fresh from Nature</h3>
+        <p>Our newest product line is inspired by the raw beauty of untouched nature—delivering freshness and nourishment in its purest form, as captured in this visual.</p>
+      </div>
+    </div>
+
+    <div class="benefit-section">
+      <img src="ingredientsimg.webp" alt="Natural Ingredients">
+      <div class="text">
+        <h3>🌿 100% Natural Ingredients</h3>
+        <p>All our products are crafted from handpicked natural sources—no chemicals, no synthetic fillers. Just the pure essence of nature in every spoonful.</p>
+      </div>
+    </div>
+
+    <div class="benefit-section">
+      <img src="No_preservative.avif" alt="No Preservatives">
+      <div class="text">
+        <h3>⛔ No Preservatives or Additives</h3>
+        <p>We believe in clean nutrition. Our powders are free from artificial preservatives, colorants, or flavorings, ensuring a clean and wholesome experience.</p>
+      </div>
+    </div>
+
+    <div class="benefit-section">
+      <img src="Hygienic & Safe Packaging.jpg" alt="Hygienic Packaging">
+      <div class="text">
+        <h3>💧 Hygienic & Safe Packaging</h3>
+        <p>Processed and packaged in a hygienic environment to maintain purity and freshness. Each pack is sealed with care for your family’s health and safety.</p>
+      </div>
+    </div>
+
+    <div class="benefit-section">
+      <img src="maximum nutrition.jpg" alt="High Nutritional Value">
+      <div class="text">
+        <h3>🍎 Retains Maximum Nutrients</h3>
+        <p>We use minimal heat drying techniques that preserve essential nutrients, vitamins, and antioxidants, giving your body the nourishment it deserves.</p>
+      </div>
+    </div>
+
+    <div class="benefit-section">
+      <img src="ecofriendly.png" alt="Eco-Friendly">
+      <div class="text">
+        <h3>🌱 Eco-Friendly Practices</h3>
+        <p>Our commitment to sustainability reflects in our sourcing, packaging, and production methods. Supporting Arogya Sutra means supporting the planet too.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial">
+        <p>"Arogya Sutra’s banana powder helped me boost energy naturally. It's become a staple in my morning smoothie!"</p>
+        <span>- Riya S.</span>
+      </div>
+      <div class="testimonial">
+        <p>"I love how fresh and clean the spice powders taste. Knowing they're natural makes me feel good about what I cook."</p>
+        <span>- Anil T.</span>
+      </div>
+      <div class="testimonial">
+        <p>"My kids love the fruit powders in their milk. No sugar, just health!"</p>
+        <span>- Pooja M.</span>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Arogya Sutra | All Rights Reserved</p>
+  </footer>
+</body>
+</html>

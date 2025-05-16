@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Arogya Sutra</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      color: #333;
+      position: relative;
+      background-color: #f0fff4;
+    }
+
+    /* Blurred background image */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('Contact.jpg') center/cover no-repeat;
+      filter: blur(10px);
+      z-index: -1;
+      opacity: 0.5;
+    }
+
+    header {
+      background-color: #2e7d32;
+      color: white;
+      padding: 20px 0;
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 2.5rem;
+      font-family: 'Playfair Display', serif;
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: hsl(0deg 0% 100% / 0%);
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      color: #1b5e20;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .contact-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: space-between;
+    }
+
+    .contact-info, .contact-form {
+      flex: 1 1 450px;
+      background-color: hsl(0deg 0% 100% / 67%);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .contact-info h3, .contact-form h3 {
+      font-size: 1.6rem;
+      color: #2e7d32;
+      margin-bottom: 20px;
+    }
+
+    .contact-info p, .contact-form label {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .contact-info p span {
+      font-weight: normal;
+      display: block;
+    }
+
+    .contact-form form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact-form input, .contact-form textarea {
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    .contact-form button {
+      background-color: #2e7d32;
+      color: white;
+      padding: 12px;
+      border: none;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background-color: #1b5e20;
+    }
+
+    .map {
+      width: 100%;
+      height: 350px;
+      margin: 40px 0;
+      border: 0;
+    }
+
+    footer {
+      background-color: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* New style for bold text */
+    .hero p.bold {
+      font-weight: bold;
+      font-size: x-large;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <h1 class="logo">Arogya Sutra</h1>
+      <nav>
+        <ul>
+          <li><a href="main.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="benefits.html">Benefits</a></li>
+          <li><a href="products.html">Products</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h2>Contact Us</h2>
+    <p class="bold">We’re here to answer your questions and support your wellness journey</p>
+  </section>
+
+  <section class="contact-container">
+    <div class="contact-info">
+      <h3>Get in Touch</h3>
+      <p>📞 Phone: <span>9356784588</span></p>
+      <p>📧 Email: <span>support@arogyasutra.com</span></p>
+      <p>📍 Address: <span>123 Wellness Street, Amravati, Maharashtra</span></p>
+      <p>🔍 Instagram: <span>@arogya_sutra</span></p>
+    </div>
+
+    <div class="contact-form">
+      <h3>Send Us a Message</h3>
+      <form>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+        <label for="mobile">Mobile Number</label>
+        <input type="text" id="mobile" name="mobile" placeholder="Your Mobile Number" required>
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.1160993365!2d73.7228788572942!3d18.52461633573925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c08f6b2850a3%3A0x91d3f7e0b1db021a!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1683703418573!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  <footer>
+    <p>&copy; 2025 Arogya Sutra | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

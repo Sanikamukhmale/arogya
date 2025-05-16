@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arogya Sutra - Our Products</title>
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #e4dc6ed2;
+      margin-left: revert;
+      margin-right: revert;
+      }
+
+    header {
+      background-color: #73a366;
+      padding: 25px 20px;
+      border-bottom: 1px solid #ccc;
+      position: relative;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      color: #2b5c3d;
+      margin: 0;
+      font-size: 32px;
+    }
+
+    .nav-container {
+      position: absolute;
+      top: 25px;
+      right: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: revert;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #2b5c3d;
+      font-weight: 600;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #40875f;
+    }
+
+    .product-heading {
+      padding: 50px 20px 40px;
+      text-align: center;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .product-heading h2 {
+      font-size: 30px;
+      color: #2b5c3d;
+      margin: 0;
+      font-family: 'Georgia', 'Times New Roman', serif;
+      font-style: italic;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+    }
+
+    .container {
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .product-block {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      background-color: #fff7e0;
+      margin-bottom: 40px;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+      overflow: hidden;
+      padding: 25px;
+      gap: 30px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product-block:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-block img {
+      width: 100%;
+      max-width: 320px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 12px;
+      flex-shrink: 0;
+    }
+
+    .product-info {
+      flex: 1;
+      padding: 0 10px;
+    }
+
+    .product-info h3 {
+      margin: 0 0 12px;
+      color: #2b5c3d;
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    .product-info p {
+      margin-bottom: 15px;
+      line-height: 1.7;
+      color: #444;
+      font-size: 16px;
+    }
+
+    .product-gallery {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 15px;
+    }
+
+    .product-gallery img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background-color: #e0f2e9;
+      color: #333;
+      font-size: 14px;
+      margin-top: 40px;
+      border-top: 1px solid #ccc;
+    }
+
+    @media (max-width: 768px) {
+      .nav-container {
+        position: static;
+        margin-top: 10px;
+        text-align: center;
+      }
+
+      nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .product-block {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .product-info {
+        padding-top: 20px;
+      }
+
+      .product-gallery {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Arogya Sutra</h1>
+    <div class="nav-container">
+      <nav>
+        <ul>
+          <li><a href="main.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="benefits.html">Benefits</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="product-heading">
+    <h2>Explore Our Natural Products</h2>
+  </div>
+
+  <div class="container">
+    <div class="product-block">
+      <img src="banananaimg.webp" alt="Banana Powder" />
+      <div class="product-info">
+        <h3>Banana Powder</h3>
+        <p>Our Banana Powder is made from fresh, chemical-free bananas, dried and ground to preserve maximum nutrients. It's a natural source of energy, supports digestion, and is great for kids and athletes alike.</p>
+        <div class="product-gallery"></div>
+      </div>
+    </div>
+
+    <div class="product-block">
+      <img src="vegetable and fruit powder.jpg" alt="Vegetable and Fruit Powder" />
+      <div class="product-info">
+        <h3>Vegetable and Fruit Powders</h3>
+        <p>These powders are made from a blend of fresh fruits and vegetables like spinach, beetroot, carrot, and more. Ideal for smoothies, baby food, or adding nutrition to daily meals without preservatives or additives.</p>
+        <div class="product-gallery"></div>
+      </div>
+    </div>
+
+    <div class="product-block">
+      <img src="spice powder.jpg" alt="Spice Powders" />
+      <div class="product-info">
+        <h3>Spice Powders</h3>
+        <p>Pure, hand-ground spices like turmeric, coriander, cumin, and more. These are sun-dried, hygienically processed, and add authentic flavor to your cooking while offering natural medicinal benefits.</p>
+        <div class="product-gallery"></div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Arogya Sutra | All rights reserved.
+  </footer>
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | Arogya Sutra</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      line-height: 1.6;
+      background-color: #fffbe6; /* Light yellow background */
+      color: #333;
+    }
+
+    header {
+      background: #cac992;
+      padding: 20px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      color: #333;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    nav a.active {
+      color: #4CAF50;
+    }
+
+    .about-hero {
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('your-background.jpg') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .about-hero h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .about-hero p {
+      font-size: 18px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    section p {
+      max-width: 800px;
+      margin: auto;
+      font-size: 18px;
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .value-box {
+      background:#a5994a;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .value-box h3 {
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+
+    .commitment-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .commitment-item {
+      background: #f9f9f9;
+      padding: 15px 25px;
+      border-radius: 8px;
+      width: 90%;
+      max-width: 600px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      font-size: 17px;
+    }
+
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1 class="logo">Arogya Sutra</h1>
+      <nav>
+        <ul>
+          <li><a href="main.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="benefits.html">Benefits</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="about-hero">
+    <h2>Our Story</h2>
+    <p>Arogya Sutra was born from a desire to embrace natural wellness. Inspired by Ayurveda and supported by science, we aim to bring families clean, natural, chemical-free nourishment for daily well-being.</p>
+  </section>
+
+  <!-- Mission & Vision -->
+  <section>
+    <h2>Our Mission & Vision</h2>
+    <p>Our mission is to promote natural health through chemical-free nutrition. We envision a world where wellness is rooted in nature — pure, safe, and accessible for all.</p>
+  </section>
+
+  <!-- Core Values -->
+  <section>
+    <h2>Core Values</h2>
+    <div class="values-grid">
+      <div class="value-box">
+        <h3>🌿 Purity</h3>
+        <p>Only clean, natural ingredients — no additives or preservatives.</p>
+      </div>
+      <div class="value-box">
+        <h3>🧡 Wellness</h3>
+        <p>Products that support holistic health and vitality.</p>
+      </div>
+      <div class="value-box">
+        <h3>📜 Tradition</h3>
+        <p>Inspired by timeless Indian Ayurvedic knowledge.</p>
+      </div>
+      <div class="value-box">
+        <h3>🔍 Transparency</h3>
+        <p>We proudly share our sourcing and processing practices.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Team -->
+  <section>
+    <h2>Our Team</h2>
+    <p>From local farmers to health enthusiasts and scientists, our team is united in one goal — making natural wellness reliable and accessible for all families.</p>
+  </section>
+
+  <!-- Commitment -->
+  <section>
+    <h2>Our Commitment</h2>
+    <div class="commitment-list">
+      <div class="commitment-item">✔️ 100% natural and organic ingredients</div>
+      <div class="commitment-item">✔️ Ethically sourced from trusted local farms</div>
+      <div class="commitment-item">✔️ Eco-conscious and sustainable packaging</div>
+      <div class="commitment-item">✔️ Hygienic and certified production processes</div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Arogya Sutra | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
